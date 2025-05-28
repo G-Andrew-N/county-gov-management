@@ -21,7 +21,7 @@ The project is organized into the following directories:
 
 1. Clone the repository:
    ```
-   git clone <repository-url>
+   git clone https://github.com/G-Andrew-N/county-gov-management
    ```
 
 2. Navigate to the project directory:
