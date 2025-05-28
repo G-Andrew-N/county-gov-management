@@ -1,0 +1,196 @@
+/* Layout for login page */
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(120deg, #e3f2fd 0%, #90caf9 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-wrapper {
+    display: flex;
+    width: 700px;
+    max-width: 96vw;
+    min-height: 420px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 24px rgba(44, 62, 80, 0.13);
+    overflow: hidden;
+}
+
+.login-left {
+    flex: 1.2;
+    background: #1976d2;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 36px 24px;
+}
+
+.login-left .logo {
+    width: 80px;
+    height: 80px;
+    background: #fff;
+    border-radius: 50%;
+    margin-bottom: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+    color: #1976d2;
+    font-weight: bold;
+    box-shadow: 0 2px 8px rgba(44, 62, 80, 0.08);
+}
+
+.login-left h1 {
+    margin: 0 0 10px 0;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.login-left p {
+    margin: 0;
+    font-size: 1.1rem;
+    opacity: 0.95;
+    text-align: center;
+}
+
+.login-right {
+    flex: 1.5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 36px 32px;
+}
+
+.login-right h2 {
+    margin-top: 0;
+    color: #1976d2;
+    font-weight: 600;
+    margin-bottom: 18px;
+}
+
+.login-right form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.login-form-row {
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    align-items: center;
+    gap: 12px;
+}
+
+.login-form-row label {
+    margin-bottom: 0;
+    text-align: right;
+    font-weight: 500;
+    color: #37474f;
+}
+
+.login-form-row input[type="email"],
+.login-form-row input[type="password"] {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #b0bec5;
+    border-radius: 4px;
+    font-size: 1rem;
+    background: #f7f9fa;
+    transition: border-color 0.2s;
+}
+
+.login-right input[type="email"],
+.login-right input[type="password"] {
+    padding: 10px 12px;
+    border: 1px solid #b0bec5;
+    border-radius: 4px;
+    font-size: 1rem;
+    background: #f7f9fa;
+    transition: border-color 0.2s;
+}
+
+.login-right input[type="email"]:focus,
+.login-right input[type="password"]:focus {
+    border-color: #1976d2;
+    outline: none;
+}
+
+.login-right button[type="submit"] {
+    background: #1976d2;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 11px 0;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 8px;
+    transition: background 0.2s;
+}
+
+.login-right button[type="submit"]:hover {
+    background: #1565c0;
+}
+
+.login-right .error {
+    color: #e53935;
+    background: #ffebee;
+    border: 1px solid #ffcdd2;
+    border-radius: 4px;
+    padding: 8px 12px;
+    margin-bottom: 10px;
+    font-size: 1em;
+}
+
+.login-right p {
+    margin-top: 18px;
+    font-size: 0.98em;
+    color: #37474f;
+}
+
+.login-right a {
+    color: #1976d2;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.login-right a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 800px) {
+    .login-wrapper {
+        flex-direction: column;
+        min-height: 0;
+        width: 98vw;
+    }
+    .login-left, .login-right {
+        padding: 28px 8vw;
+    }
+    .login-left {
+        border-radius: 12px 12px 0 0;
+    }
+    .login-right {
+        border-radius: 0 0 12px 12px;
+    }
+}
+
+@media (max-width: 600px) {
+    .login-form-row {
+        grid-template-columns: 1fr;
+        gap: 4px;
+    }
+    .login-form-row label {
+        text-align: left;
+        margin-bottom: 2px;
+    }
+}
