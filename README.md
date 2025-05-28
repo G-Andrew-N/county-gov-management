@@ -1,6 +1,6 @@
 # County Government Management System
 
-This is a mini web application designed for managing county government staff and their accounts. The application allows for admin and staff login capabilities, staff registration, and document uploads.
+This is web application designed for managing nyandarua county government staff and their accounts. The application allows for admin and staff login capabilities, staff registration, and document uploads.
 
 ## Features
 
@@ -29,14 +29,11 @@ The project is organized into the following directories:
    cd county-gov-management
    ```
 
-3. Install dependencies using Composer:
-   ```
-   composer install
-   ```
 
-4. Configure the database settings in `src/config/database.php`.
 
-5. Start the web server and access the application through your browser.
+3. Configure the database settings in `src/config/database.php`.
+
+4. Start the web server and access the application through your browser.
 
 ## Usage
 
@@ -48,6 +45,3 @@ The project is organized into the following directories:
 
 Contributions are welcome! Please submit a pull request or open an issue for any enhancements or bug fixes.
 
-## License
-
-This project is licensed under the MIT License. See the LICENSE file for more details.
